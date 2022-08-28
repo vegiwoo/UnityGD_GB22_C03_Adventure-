@@ -9,6 +9,7 @@ MonoImporter:
   - daySkybox: {fileID: 2100000, guid: df3af5dd90f8f47628eb76eac6990c13, type: 2}
   - nightSkybox: {fileID: 2100000, guid: daed37de872c94b2ea72def17e258a34, type: 2}
   - starsParticles: {instanceID: 0}
+  - newDayEvent: {fileID: 11400000, guid: 78e17135b1ae64faa8ba350af19dbfb5, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

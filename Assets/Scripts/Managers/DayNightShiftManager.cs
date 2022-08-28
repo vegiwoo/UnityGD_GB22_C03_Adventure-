@@ -30,6 +30,8 @@ namespace C03_Adventure.Managers
         [SerializeField] private ParticleSystem starsParticles;
         
         private const float FullCircleInDegrees = 360f;
+
+        [SerializeField] private GameEvent newDayEvent;
         
         private void Start()
         {
@@ -60,6 +62,11 @@ namespace C03_Adventure.Managers
 
                 var starsMain = starsParticles.main;
                 starsMain.startColor = new Color(1, 1, 1, 1 - skyBoxCurve.Evaluate(timeOfDay));
+
+                if (timeOfDay == 0)
+                {
+                    newDayEvent.Notify();
+                }
                 
                 yield return null;
             }
