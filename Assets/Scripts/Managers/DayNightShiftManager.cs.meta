@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 54a26c49ddfd947e380e1978af0ad297
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - sun: {fileID: 8126390586809310374, guid: 7151349dc2fcc47f28e3674e9e2096f3, type: 3}
+  - moon: {fileID: 4723021663377249143, guid: 4d6ef5d4626f44063ba77094cf07ad6a, type: 3}
+  - daySkybox: {fileID: 2100000, guid: df3af5dd90f8f47628eb76eac6990c13, type: 2}
+  - nightSkybox: {fileID: 2100000, guid: daed37de872c94b2ea72def17e258a34, type: 2}
+  - starsParticles: {instanceID: 0}
+  - newDayEvent: {fileID: 11400000, guid: 78e17135b1ae64faa8ba350af19dbfb5, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

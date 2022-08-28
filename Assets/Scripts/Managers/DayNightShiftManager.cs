@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -31,6 +30,8 @@ namespace C03_Adventure.Managers
         [SerializeField] private ParticleSystem starsParticles;
         
         private const float FullCircleInDegrees = 360f;
+
+        [SerializeField] private GameEvent newDayEvent;
         
         private void Start()
         {
@@ -42,32 +43,7 @@ namespace C03_Adventure.Managers
 
             StartCoroutine(TimeOfDayCoroutine());
         }
-
-        public Color myColor;
-        private void OnGUI()
-        {
-            myColor = RGBSlider(new Rect(10, 10, 200, 20), myColor);
-        }
-
-        private Color RGBSlider(Rect screenRect, Color rgb)
-        {
-            rgb.r = LabelSlider(screenRect, rgb.r, 1.0f, "Red");
-            screenRect.y += 20;
-            rgb.g = LabelSlider(screenRect, rgb.g, 1.0f, "Green");
-            screenRect.y += 20;
-            rgb.b = LabelSlider(screenRect, rgb.b, 1.0f, "Blue");
-            return rgb;
-        }
         
-        private static float LabelSlider(Rect screenRect, float sliderValue, float sliderMaxValue, string labelText)
-        {
-            GUI.Label(screenRect, labelText);
-            screenRect.x += screenRect.width;
-         
-            sliderValue = GUI.HorizontalSlider(screenRect, sliderValue, 0.0f, sliderMaxValue);
-            return sliderValue;
-        }
-
         private IEnumerator TimeOfDayCoroutine()
         {
             while (true)
@@ -86,6 +62,11 @@ namespace C03_Adventure.Managers
 
                 var starsMain = starsParticles.main;
                 starsMain.startColor = new Color(1, 1, 1, 1 - skyBoxCurve.Evaluate(timeOfDay));
+
+                if (timeOfDay == 0)
+                {
+                    newDayEvent.Notify();
+                }
                 
                 yield return null;
             }
