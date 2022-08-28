@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -31,7 +32,8 @@ namespace C03_Adventure.Managers
         
         private const float FullCircleInDegrees = 360f;
 
-        [SerializeField] private GameEvent newDayEvent;
+        [SerializeField] private GameBoolEvent nightfallEvent;
+        private bool _isNightfall;
         
         private void Start()
         {
@@ -40,6 +42,8 @@ namespace C03_Adventure.Managers
             
             timeOfDay = 0f;
             dayDuration = 30f;
+
+            _isNightfall = false;
 
             StartCoroutine(TimeOfDayCoroutine());
         }
@@ -63,9 +67,17 @@ namespace C03_Adventure.Managers
                 var starsMain = starsParticles.main;
                 starsMain.startColor = new Color(1, 1, 1, 1 - skyBoxCurve.Evaluate(timeOfDay));
 
-                if (timeOfDay == 0)
+                const float tolerance = 0.01f;
+                switch (_isNightfall)
                 {
-                    newDayEvent.Notify();
+                    case false when Math.Abs(timeOfDay - 0.5f) < tolerance:
+                        _isNightfall = true;
+                        nightfallEvent.Notify(true);
+                        break;
+                    case true when Math.Abs(timeOfDay - 1) < tolerance:
+                        _isNightfall = false;
+                        nightfallEvent.Notify(false);
+                        break;
                 }
                 
                 yield return null;
