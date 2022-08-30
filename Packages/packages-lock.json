@@ -245,8 +245,11 @@
       "version": "https://github.com/vegiwoo/unity-gamedevlib-package.git",
       "depth": 0,
       "source": "git",
-      "dependencies": {},
-      "hash": "2f3383d36937605dfc7ee6b323567aff36f5194f"
+      "dependencies": {
+        "com.unity.inputsystem": "1.4.2",
+        "com.unity.cinemachine": "2.8.6"
+      },
+      "hash": "da33a4d5f5cb8691a48543a41a98c9dd3cadd559"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

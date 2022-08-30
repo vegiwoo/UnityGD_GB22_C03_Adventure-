@@ -19,13 +19,15 @@ namespace C03_Adventure
         private const float LampIntenseMinBound = 3.5f;
         private const float LampIntenseMaxBound = 5.5f;
         
-        private readonly float _switchLampDelay = Random.Range(1.0f, 3.0f);
+        private float switchLampDelay;
 
-        private bool _isNightfall;
+        private bool isNightfall;
         
         private Coroutine lampGlowCoroutine;
         private void Start()
         {
+            switchLampDelay = Random.Range(1.0f, 3.0f);
+            
             _particles = fireOnLampPost.GetComponentsInChildren<ParticleSystem>();
             lampPointLight.intensity = 0.5f;
             
@@ -46,10 +48,10 @@ namespace C03_Adventure
             nightfallEvent.Detach(this);
         }
         
-        public void OnEventRaised(ISubject<bool> subject, bool isNightfall)
+        public void OnEventRaised(ISubject<bool> subject, bool nightfall)
         {
-            _isNightfall = isNightfall;
-            if (!_isNightfall) return;
+            isNightfall = nightfall;
+            if (!this.isNightfall) return;
             lampGlowCoroutine = StartCoroutine(LampGlowCoroutine());
         }
 
@@ -60,7 +62,7 @@ namespace C03_Adventure
         private IEnumerator LampGlowCoroutine()
         {
             // Turn on
-            yield return new WaitForSeconds(_switchLampDelay);
+            yield return new WaitForSeconds(switchLampDelay);
             
             foreach (var particle in _particles)
             {
@@ -68,7 +70,7 @@ namespace C03_Adventure
             }
             lampPointLight.enabled = true;
             
-            while (_isNightfall)
+            while (isNightfall)
             {
                 var intensity = Random.Range(LampIntenseMinBound, LampIntenseMaxBound);
                 lampPointLight.intensity = Mathf.Lerp(lampPointLight.intensity, intensity, Time.deltaTime);
@@ -76,7 +78,7 @@ namespace C03_Adventure
             }
 
             // Turn off 
-            yield return new WaitForSeconds(_switchLampDelay);
+            yield return new WaitForSeconds(switchLampDelay);
             
             lampPointLight.enabled = false;
             foreach (var particle in _particles)
