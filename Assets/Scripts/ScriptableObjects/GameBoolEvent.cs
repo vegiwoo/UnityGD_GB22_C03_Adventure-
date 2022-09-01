@@ -8,26 +8,26 @@ namespace C03_Adventure
     /// <summary>
     /// Represents a game event.
     /// </summary>
-    [CreateAssetMenu]
-    public class GameEvent : ScriptableObject, ISubject
+    [CreateAssetMenu(fileName = "GameBoolEvent", menuName = "ScriptableEvents/GameBoolEvent", order = 0)]
+    public class GameBoolEvent : ScriptableObject, ISubject<bool>
     {
-        private readonly List<IObserver> _observers = new ();
+        private readonly List<IObserver<bool>> _observers = new ();
 
-        public void Attach(IObserver observer)
+        public void Attach(IObserver<bool> observer)
         {
             _observers.Add(observer);
         }
 
-        public void Detach(IObserver observer)
+        public void Detach(IObserver<bool> observer)
         {
             _observers.Remove(observer);
         }
 
-        public void Notify()
+        public void Notify(bool args)
         {
             foreach (var observer in _observers)
             {
-                observer.OnEventRaised(this);
+                observer.OnEventRaised(this, args);
             }
         }
     }

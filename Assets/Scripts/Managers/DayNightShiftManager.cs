@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using GameDevLib.Helpers;
 
 // ReSharper disable once CheckNamespace
 namespace C03_Adventure.Managers
@@ -9,7 +11,19 @@ namespace C03_Adventure.Managers
     /// </summary>
     public class DayNightShiftManager : MonoBehaviour
     {
-        [SerializeField,Range(0f,1f)] private float timeOfDay;
+        #region Links
+        [SerializeField] private ParticleSystem starsParticles;
+        [SerializeField] private GameBoolEvent nightfallEvent;
+        #endregion
+        
+        #region Constants and variables
+        private const float FullCircleInDegrees = 360f;
+        
+        private bool isNightfall;
+        
+        [field:SerializeField, ReadonlyField] 
+        private float timeOfDay;
+        
         [SerializeField] private float dayDuration; // in sec
         
         [Header("Sun")]
@@ -26,23 +40,22 @@ namespace C03_Adventure.Managers
         [SerializeField] private Material daySkybox;
         [SerializeField] private Material nightSkybox;
         [SerializeField] private AnimationCurve skyBoxCurve;
-
-        [SerializeField] private ParticleSystem starsParticles;
+        #endregion
         
-        private const float FullCircleInDegrees = 360f;
-
-        [SerializeField] private GameEvent newDayEvent;
-        
+        #region MonoBehaviour methods
         private void Start()
         {
             sunIntensity = sun.intensity;
             moonIntensity = moon.intensity;
             
             timeOfDay = 0f;
-            dayDuration = 30f;
+            isNightfall = false;
 
             StartCoroutine(TimeOfDayCoroutine());
         }
+        #endregion
+        
+        #region Functionality
         
         private IEnumerator TimeOfDayCoroutine()
         {
@@ -63,13 +76,22 @@ namespace C03_Adventure.Managers
                 var starsMain = starsParticles.main;
                 starsMain.startColor = new Color(1, 1, 1, 1 - skyBoxCurve.Evaluate(timeOfDay));
 
-                if (timeOfDay == 0)
+                const float tolerance = 0.01f;
+                switch (isNightfall)
                 {
-                    newDayEvent.Notify();
+                    case false when Math.Abs(timeOfDay - 0.5f) < tolerance:
+                        isNightfall = true;
+                        nightfallEvent.Notify(true);
+                        break;
+                    case true when Math.Abs(timeOfDay - 1) < tolerance:
+                        isNightfall = false;
+                        nightfallEvent.Notify(false);
+                        break;
                 }
                 
                 yield return null;
             }
         }
+        #endregion
     }
 }
