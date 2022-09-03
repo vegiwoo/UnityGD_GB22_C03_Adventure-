@@ -5,28 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e23109d2-8f60-45df-abe3-a4806ff3c802" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Hero.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Hero.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lights/Moon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lights/Moon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/Stars.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Stars.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Props/LampPost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Props/LampPost.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/HeroStats.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/HeroStats.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DayNightShiftManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DayNightShiftManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DayNightShiftManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DayNightShiftManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Props/LampPost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Props/LampPost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CharacterStats.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CharacterStats.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/FloatVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/FloatVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGD_GB22_C03_Adventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGD_GB22_C03_Adventure/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/InAir.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/InAir.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/JumpLand.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/JumpLand.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/JumpStart.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/JumpStart.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/ThridPersonAnimationController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animnations/MySolition/ThridPersonAnimationController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/StarterAssetsThirdPerson.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/StarterAssetsThirdPerson.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerArmature.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerArmature.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerFollowCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerFollowCamera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ThirdPersonTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ThirdPersonTestScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +24,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StarterAssets/StarterAssetsInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonRigidBodyPush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition@12.1.7/Runtime/RenderPipeline/Settings/FrameSettingsHistory.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -109,6 +101,7 @@
       <workItem from="1661717929220" duration="3059000" />
       <workItem from="1661892162895" duration="1075000" />
       <workItem from="1661899993004" duration="556000" />
+      <workItem from="1662225344772" duration="2257000" />
     </task>
     <servers />
   </component>
