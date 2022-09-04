@@ -141,7 +141,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.94, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &2409594231051032574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   sprintSpeed: 5.335
-  rotationSmoothTime: 0.12
+  rotationSmoothTime: 0.2
   speedChangeRate: 10
   landingAudioClip: {fileID: 8300000, guid: c830920465c9c479aa74d53cfa5091e8, type: 3}
   footstepAudioClips:

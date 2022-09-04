@@ -5,41 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e23109d2-8f60-45df-abe3-a4806ff3c802" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGD_GB22_C03_Adventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGD_GB22_C03_Adventure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/ThridPersonAnimationController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animnations/MySolition/ThridPersonAnimationController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Jump--InAir.anim.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Jump--InAir.anim.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Jump--Jump.anim.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Jump--Jump.anim.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Run_N.anim.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Run_N.anim.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Run_N_Land.anim.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Run_N_Land.anim.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Run_S.anim.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Run_S.anim.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Walk_N.anim.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Walk_N.anim.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Walk_N_Land.anim.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Locomotion--Walk_N_Land.anim.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Stand--Idle.anim.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/Stand--Idle.anim.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/StarterAssetsThirdPerson.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animnations/StarterAssetsThirdPerson/StarterAssetsThirdPerson.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/StarterAssetsThirdPersonInput.inputactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/StarterAssetsThirdPersonInput.inputactions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/StarterAssetsThridPersonMaterials/M_Armature_Arms.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/StarterAssetsThridPersonMaterials/M_Armature_Arms.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/StarterAssetsThridPersonMaterials/M_Armature_Body.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/StarterAssetsThridPersonMaterials/M_Armature_Body.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/StarterAssetsThridPersonMaterials/M_Armature_Legs.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/StarterAssetsThridPersonMaterials/M_Armature_Legs.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Character/StarterAssetsThirdPerson/ThirdPerosonArmature.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Character/StarterAssetsThirdPerson/ThirdPerosonArmature.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerArmature.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerArmature.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerFollowCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerFollowCamera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ThirdPersonTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ThirdPersonTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Props/LampPost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Props/LampPost.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StarterAssets/ThirdPerson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StarterAssets/ThirdPerson.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain/Terrain_0_0_d9bbcf55-a460-4646-b456-750df207fa95.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/Terrain_0_0_d9bbcf55-a460-4646-b456-750df207fa95.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +98,7 @@
       <workItem from="1661892162895" duration="1075000" />
       <workItem from="1661899993004" duration="556000" />
       <workItem from="1662225344772" duration="3775000" />
+      <workItem from="1662325548759" duration="136000" />
     </task>
     <servers />
   </component>

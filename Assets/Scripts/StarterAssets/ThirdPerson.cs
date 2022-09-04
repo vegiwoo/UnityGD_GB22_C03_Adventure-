@@ -160,7 +160,6 @@ namespace C03_Adventure
             if (!_hasAnimator) return;
             
             _animator.SetBool(_animIDGrounded, grounded);
-            Debug.Log(grounded);
         }
 
         private void CameraRotation()
@@ -169,7 +168,7 @@ namespace C03_Adventure
             if (_input.look.sqrMagnitude >= Threshold && !lockCameraPosition)
             {
                 //Don't multiply mouse input by Time.deltaTime;
-                float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
+                var deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
                 _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier;
                 _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier;
