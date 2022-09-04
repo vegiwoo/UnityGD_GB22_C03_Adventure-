@@ -127,7 +127,7 @@ namespace C03_Adventure
 
         private void Update()
         {
-            _hasAnimator = TryGetComponent(out _animator);
+            //_hasAnimator = TryGetComponent(out _animator);
 
             JumpAndGravity();
             GroundedCheck();
@@ -157,10 +157,10 @@ namespace C03_Adventure
                 QueryTriggerInteraction.Ignore);
 
             // update animator if using character
-            if (_hasAnimator)
-            {
-                _animator.SetBool(_animIDGrounded, grounded);
-            }
+            if (!_hasAnimator) return;
+            
+            _animator.SetBool(_animIDGrounded, grounded);
+            Debug.Log(grounded);
         }
 
         private void CameraRotation()
@@ -254,7 +254,6 @@ namespace C03_Adventure
         {
             if (grounded)
             {
-                Debug.Log("IsGrounded!");
                 // reset the fall timeout timer
                 _fallTimeoutDelta = fallTimeout;
 
@@ -274,14 +273,12 @@ namespace C03_Adventure
                 // Jump
                 if (_input.jump && _jumpTimeoutDelta <= 0.0f)
                 {
-                    Debug.Log("Jumping!");
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
 
                     // update animator if using character
                     if (_hasAnimator)
                     {
-                        Debug.Log("Set flag!");
                         _animator.SetBool(_animIDJump, true);
                     }
                 }
