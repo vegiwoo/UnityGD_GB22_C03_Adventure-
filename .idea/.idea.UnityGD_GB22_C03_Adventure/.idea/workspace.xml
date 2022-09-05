@@ -5,14 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e23109d2-8f60-45df-abe3-a4806ff3c802" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Input.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerFollowCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerFollowCamera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Props/LampPost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Props/LampPost.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGD_GB22_C03_Adventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGD_GB22_C03_Adventure/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_JumpInAir.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_JumpInAir.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_JumpOnLand.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_JumpOnLand.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_JumpStart.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_JumpStart.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_Running.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_Running.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_Walking.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Person_Walking.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Run_N_Land.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Run_N_Land.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Run_S.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Run_S.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/ThridPersonAnimationController.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/ThridPersonAnimationController.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Walk_N_Land.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animnations/MySolition/Walk_N_Land.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StarterAssets/ThirdPerson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StarterAssets/ThirdPerson.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/Terrain_0_0_d9bbcf55-a460-4646-b456-750df207fa95.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/Terrain_0_0_d9bbcf55-a460-4646-b456-750df207fa95.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +37,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/IKControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StarterAssets/StarterAssetsInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonRigidBodyPush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition@12.1.7/Runtime/RenderPipeline/Settings/FrameSettingsHistory.cs" root0="SKIP_HIGHLIGHTING" />
@@ -98,7 +116,9 @@
       <workItem from="1661892162895" duration="1075000" />
       <workItem from="1661899993004" duration="556000" />
       <workItem from="1662225344772" duration="3775000" />
-      <workItem from="1662325548759" duration="136000" />
+      <workItem from="1662325548759" duration="449000" />
+      <workItem from="1662377564693" duration="737000" />
+      <workItem from="1662386775326" duration="5451000" />
     </task>
     <servers />
   </component>
