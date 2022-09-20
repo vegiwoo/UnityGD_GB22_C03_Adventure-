@@ -7,7 +7,9 @@ namespace C03_Adventure
     [RequireComponent(typeof(CharacterController), typeof(PlayerInput))]
     public class ThirdPerson : MonoBehaviour
     {
-        [Header("Player")] [Tooltip("Move speed of the character in m/s")]
+        #region Constant and variables
+        [Header("Player")]
+        [Tooltip("Move speed of the character in m/s")]
         public float moveSpeed = 2.0f;
 
         [Tooltip("Sprint speed of the character in m/s")]
@@ -19,20 +21,16 @@ namespace C03_Adventure
         [Tooltip("Acceleration and deceleration")]
         public float speedChangeRate = 10.0f;
 
-        public AudioClip landingAudioClip;
-        public AudioClip[] footstepAudioClips;
-        [Range(0, 1)] public float footstepAudioVolume = 0.5f;
-
-        [Space(10)] [Tooltip("The height the player can jump")]
+        [Space(10)]
+        [Tooltip("The height the player can jump")]
         public float jumpHeight = 1.2f;
 
         [Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
         public float gravity = -15.0f;
-
-        [Space(10)]
         [Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
         public float jumpTimeout = 0.50f;
 
+        [Space(10)]
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
         public float fallTimeout = 0.15f;
 
@@ -49,9 +47,6 @@ namespace C03_Adventure
         public LayerMask groundLayers;
 
         [Header("Cinemachine")]
-        [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
-        public GameObject cinemachineCameraTarget;
-
         [Tooltip("How far in degrees can you move the camera up")]
         public float topClamp = 70.0f;
 
@@ -86,9 +81,9 @@ namespace C03_Adventure
         private int _animIDJump;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
-        
+
         private PlayerInput _playerInput;
-        
+
         private Animator _animator;
         private CharacterController _controller;
         private StarterAssetsInput _input;
@@ -99,7 +94,19 @@ namespace C03_Adventure
         private bool _hasAnimator;
 
         private bool IsCurrentDeviceMouse => _playerInput.currentControlScheme == "KeyboardMouse";
+        #endregion
 
+        #region Links
+        [Header("Audio")]
+        public AudioClip landingAudioClip;
+        public AudioClip[] footstepAudioClips;
+        [Range(0, 1)] public float footstepAudioVolume = 0.5f;
+
+        [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
+        public GameObject cinemachineCameraTarget;
+        #endregion
+
+        #region MonoBehaviour methods
         private void Awake()
         {
             // get a reference to our main camera
@@ -139,7 +146,20 @@ namespace C03_Adventure
             CameraRotation();
         }
 
-        private void AssignAnimationIDs()
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = grounded ? Color.green : Color.red;
+
+            var position = transform.position;
+            // when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
+            Gizmos.DrawSphere(
+                new Vector3(position.x, position.y - groundedOffset, position.z),
+                groundedRadius);
+        }
+        #endregion
+
+        #region Functionality
+                private void AssignAnimationIDs()
         {
             _animIDSpeed = Animator.StringToHash("Speed");
             _animIDGrounded = Animator.StringToHash("Grounded");
@@ -158,7 +178,7 @@ namespace C03_Adventure
 
             // update animator if using character
             if (!_hasAnimator) return;
-            
+
             _animator.SetBool(_animIDGrounded, grounded);
         }
 
@@ -325,22 +345,11 @@ namespace C03_Adventure
             return Mathf.Clamp(lfAngle, lfMin, lfMax);
         }
 
-        private void OnDrawGizmosSelected()
-        {
-            Gizmos.color = grounded ? Color.green : Color.red;
-
-            var position = transform.position;
-            // when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
-            Gizmos.DrawSphere(
-                new Vector3(position.x, position.y - groundedOffset, position.z),
-                groundedRadius);
-        }
-
         private void OnFootstep(AnimationEvent animationEvent)
         {
             if (!(animationEvent.animatorClipInfo.weight > 0.5f)) return;
             if (footstepAudioClips.Length <= 0) return;
-            
+
             var index = Random.Range(0, footstepAudioClips.Length);
             AudioSource.PlayClipAtPoint(footstepAudioClips[index], transform.TransformPoint(_controller.center), footstepAudioVolume);
         }
@@ -351,5 +360,6 @@ namespace C03_Adventure
             AudioSource.PlayClipAtPoint(landingAudioClip, transform.TransformPoint(_controller.center),
                     footstepAudioVolume);
         }
+        #endregion
     }
 }
