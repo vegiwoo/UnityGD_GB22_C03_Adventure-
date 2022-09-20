@@ -66,8 +66,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# My
 # Directory with imported packages
-/[Aa]ssets/Import/*
+.DS_Store
 
 # Exceptions
 !*.dll
