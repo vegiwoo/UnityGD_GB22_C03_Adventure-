@@ -7,23 +7,30 @@ namespace C03_Adventure
 {
     public class LampPost : MonoBehaviour, IObserver<bool>
     {
+        #region Links
+        
         public GameBoolEvent nightfallEvent;
+        [SerializeField] public ParticleSystem fireOnLampPost;
+        [SerializeField] private Light lampPointLight;
+        #endregion
         
-        [SerializeField]
-        public ParticleSystem fireOnLampPost;
-        private ParticleSystem[] _particles;
+        #region Fields
         
-        [SerializeField]
-        private Light lampPointLight;
-
         private const float LampIntenseMinBound = 3.5f;
         private const float LampIntenseMaxBound = 5.5f;
         
         private float switchLampDelay;
 
+        private ParticleSystem[] _particles;
+        
         private bool isNightfall;
         
         private Coroutine lampGlowCoroutine;
+        
+        #endregion
+
+        #region MonoBehaviour mehods
+        
         private void Start()
         {
             switchLampDelay = Random.Range(1.0f, 3.0f);
@@ -47,6 +54,10 @@ namespace C03_Adventure
         {
             nightfallEvent.Detach(this);
         }
+        
+        #endregion
+        
+        #region Functionality
         
         public void OnEventRaised(ISubject<bool> subject, bool nightfall)
         {
@@ -87,5 +98,7 @@ namespace C03_Adventure
             }
             lampGlowCoroutine = null;
         }
+        
+        #endregion
     }
 }

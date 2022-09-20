@@ -5,62 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e23109d2-8f60-45df-abe3-a4806ff3c802" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityGD_GB22_C03_Adventure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityGD_GB22_C03_Adventure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_JumpInAir.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_JumpInAir.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_JumpOnLand.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_JumpOnLand.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_JumpStart.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_JumpStart.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_Running.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_Running.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_Walking.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Person_Walking.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Run_N_Land.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Run_N_Land.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Run_S.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Run_S.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/ThridPersonAnimationController.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/ThridPersonAnimationController.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Walk_N_Land.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MySolition/Walk_N_Land.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_04.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_04.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_05.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_05.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_06.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_06.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_07.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_07.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_08.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_08.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_09.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_09.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Footstep_10.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/StarterAssetsThirdPersonSFX/Player_Land.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/StarterAssetsThirdPersonInput.inputactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/StarterAssetsThirdPersonInput.inputactions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerFollowCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/PlayerFollowCamera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/ThirdPersonArmature.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chatacter/StarterPackThirdPerson/ThirdPersonArmature.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ThirdPersonTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ThirdPersonTestScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Props/LampPost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Props/LampPost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GameBoolEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GameBoolEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StarterAssets/ThirdPerson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StarterAssets/ThirdPerson.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +17,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StarterAssets/StarterAssetsInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdPersonRigidBodyPush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition@12.1.7/Runtime/RenderPipeline/Settings/FrameSettingsHistory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.vegi.gamedevlib@e6e0492707/Scripts/Runtime/Animation/IKControl.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -154,6 +98,7 @@
       <workItem from="1662411359822" duration="499000" />
       <workItem from="1662654527299" duration="652000" />
       <workItem from="1662669265072" duration="252000" />
+      <workItem from="1663711372354" duration="165000" />
     </task>
     <servers />
   </component>
