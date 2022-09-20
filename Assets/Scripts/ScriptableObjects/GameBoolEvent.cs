@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using GameDevLib;
+using GameDevLib.Interfaces;
 
 // ReSharper disable once CheckNamespace
 namespace C03_Adventure

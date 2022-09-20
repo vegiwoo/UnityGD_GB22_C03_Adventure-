@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 3231724403837340759}
   - component: {fileID: 7176759543618655331}
   - component: {fileID: -6098067776950756438}
+  - component: {fileID: 1719442504}
   m_Layer: 6
   m_Name: ThirdPersonArmature
   m_TagString: Untagged
@@ -114,7 +115,7 @@ Animator:
   m_GameObject: {fileID: 532323541431167032}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: cd03b2d1961e14e0cb10f3a0517ecc2c, type: 3}
-  m_Controller: {fileID: 9100000, guid: cb2137d3560de4730b0a0e6e367a587b, type: 2}
+  m_Controller: {fileID: 9100000, guid: f210c1eb2265046b0921d5b21e41d269, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -135,13 +136,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.9
+  m_Height: 1.75
   m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.86, z: 0}
 --- !u!114 &2409594231051032574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +190,20 @@ MonoBehaviour:
   sprintSpeed: 5.335
   rotationSmoothTime: 0.2
   speedChangeRate: 10
+  jumpHeight: 1.2
+  gravity: -15
+  jumpTimeout: 0.5
+  fallTimeout: 0.15
+  grounded: 1
+  groundedOffset: -0.14
+  groundedRadius: 0.28
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  topClamp: 70
+  bottomClamp: -30
+  cameraAngleOverride: 0
+  lockCameraPosition: 0
   landingAudioClip: {fileID: 8300000, guid: c830920465c9c479aa74d53cfa5091e8, type: 3}
   footstepAudioClips:
   - {fileID: 8300000, guid: 0e80277639a834a45ace7f69ffc1dc8a, type: 3}
@@ -202,22 +217,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 72437bf23018c42bdb64663035e77ced, type: 3}
   - {fileID: 8300000, guid: 5445b59c8555a48789cfe61bb547daca, type: 3}
   footstepAudioVolume: 0.5
-  jumpHeight: 1.2
-  gravity: -15
-  jumpTimeout: 0.5
-  fallTimeout: 0.15
-  grounded: 1
-  groundedOffset: -0.14
-  groundedRadius: 0.28
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 128
   cinemachineCameraTarget: {fileID: 8571839774057962034, guid: 916619b81875b4671a57db437ec8b87f,
     type: 3}
-  topClamp: 70
-  bottomClamp: -30
-  cameraAngleOverride: 0
-  lockCameraPosition: 0
 --- !u!114 &7176759543618655331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +255,25 @@ MonoBehaviour:
     m_Bits: 0
   canPush: 0
   strength: 1.1
+--- !u!114 &1719442504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532323541431167032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aae7dbf49c534bfbb018b84711b8dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ikActive: 0
+  leftHandTarget: {fileID: 0}
+  rightHandTarget: {fileID: 0}
+  handContactDistance: 1.5
+  headTurnTarget: {fileID: 0}
+  headAimDistance: 2
+  timeReaction: 0.5
 --- !u!1 &581971786581224670
 GameObject:
   m_ObjectHideFlags: 0

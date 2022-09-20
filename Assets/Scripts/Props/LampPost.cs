@@ -1,11 +1,11 @@
 using System.Collections;
-using GameDevLib;
+using GameDevLib.Interfaces;
 using UnityEngine;
 
 // ReSharper disable once CheckNamespace
 namespace C03_Adventure 
 {
-    public class LampPost : MonoBehaviour, GameDevLib.IObserver<bool>
+    public class LampPost : MonoBehaviour, IObserver<bool>
     {
         public GameBoolEvent nightfallEvent;
         
