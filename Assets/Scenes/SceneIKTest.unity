@@ -513,6 +513,10 @@ PrefabInstance:
       propertyPath: <TargetForRightHand>k__BackingField
       value: 
       objectReference: {fileID: 1030507465}
+    - target: {fileID: 404100598, guid: 230f1664fd121485fbe3ad1a7f89315e, type: 3}
+      propertyPath: <HandContactDistance>k__BackingField
+      value: 1.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1203183011033557897, guid: 230f1664fd121485fbe3ad1a7f89315e,
         type: 3}
       propertyPath: <Stats>k__BackingField
@@ -975,7 +979,7 @@ PrefabInstance:
     - target: {fileID: 7592586644918222266, guid: d8d150904c90042d38929bd0b53c9f92,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.536884
+      value: 3.5578086
       objectReference: {fileID: 0}
     - target: {fileID: 7592586644918222266, guid: d8d150904c90042d38929bd0b53c9f92,
         type: 3}
