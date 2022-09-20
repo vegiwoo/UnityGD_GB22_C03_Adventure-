@@ -1,0 +1,3 @@
+[submodule "unity-gamedevlib-package"]
+	path = unity-gamedevlib-package
+	url = https://github.com/vegiwoo/unity-gamedevlib-package.git
